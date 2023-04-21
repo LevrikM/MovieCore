@@ -1,13 +1,39 @@
-<!doctype html>
+<?php
+/* Smarty version 4.3.0, created on 2023-04-21 21:50:10
+  from 'D:\xampp\htdocs\MovieCore\views\default\header.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_6442e8f29ce952_76857054',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '07d789696cab42fabd3019374073333accde9030' => 
+    array (
+      0 => 'D:\\xampp\\htdocs\\MovieCore\\views\\default\\header.tpl',
+      1 => 1682106588,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6442e8f29ce952_76857054 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{$pageTitle}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
+</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"><?php echo '</script'; ?>
+>
 </head>
 
 <body>
@@ -43,3 +69,5 @@
             </ul>
         </div>
     </nav>
+<?php }
+}
