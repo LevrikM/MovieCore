@@ -15,7 +15,7 @@ function showAction($smarty){
 
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "filmShow");
-//    loadTemplate($smarty, "footer");
+    loadTemplate($smarty, "footer");
 }
 
 
@@ -44,16 +44,11 @@ function addAction($smarty){
 
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "filmAdd");
-//    loadTemplate($smarty, "footer");
+    loadTemplate($smarty, "footer");
 }
 
 
 function filmAddAction($smarty){
-
-
-
-
-
     $smarty -> assign("pageTitle", "Додавання фільму");
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "filmAdd");

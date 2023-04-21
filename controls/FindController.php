@@ -3,8 +3,6 @@ include_once "../models/FindModel.php";
 include_once "../library/mainFunctions.php";
 
 function nameAction($smarty){
-/*    $findFilm = isset($_POST["nameFind"]) ? $_POST["nameFind"] : null;*/
-
     $findFilm = isset($_GET["nameFind"]) ? $_GET["nameFind"] : null;
     $trimmed = trim($findFilm, "[NS,L]");
     $rsFilm = getFilmsByName($trimmed);

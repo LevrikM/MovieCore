@@ -1,13 +1,14 @@
 <?php
 
-$dbHost = "localhost";
-$dbUser = "root";
-$dbPass = "";
-$dbName = "db_films";
+$dbHost = "sql7.freemysqlhosting.net";
+$dbUser = "sql7613886";
+$dbPass = "cbdIUwVEIa";
+$dbName = "sql7613886";
 
 try {
     $conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
     $mysql = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+    $mysql->set_charset("utf8");
     $conn = null;
 } catch (Exception $e) {
     if(str_contains($e->getMessage(), 'Access denied')){

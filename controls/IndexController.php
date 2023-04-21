@@ -3,7 +3,6 @@ include_once "../models/IndexModel.php";
 include_once "../library/mainFunctions.php";
 
 function indexAction($smarty){
-
     $rsFilm = getAllFilms();
 
     $config['date'] = '%d.%m.%g';
