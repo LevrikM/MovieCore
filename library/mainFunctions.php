@@ -34,6 +34,9 @@ function loadTemplate($smarty, $templateName){
     $smarty -> display($templateName.TemplatePostfix);
 }
 
+
+//Ця функція призначена для завантаження файлів на сервер.
+//Вона приймає два аргументи: шлях, до якого буде зберігатися файл на сервері, та сам файл, який має бути завантажений.
 function uploadFile($fileDir, $file){
     do {
         $fileNameParts = explode(".", $file["name"]);

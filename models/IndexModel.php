@@ -9,6 +9,8 @@ function getAllFilms(){
     return convertToReadableData($record_set);
 }
 
+
+//Дана функція повертає масив жанрів фільмів, який містить рядок з кожним жанром.
 function getGenres()
 {
     $genres = [
