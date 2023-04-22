@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-21 23:20:23
-  from 'D:\xampp\htdocs\MovieCore\views\default\header.tpl' */
+/* Smarty version 4.3.0, created on 2023-04-21 23:27:15
+  from 'C:\OSPanel\domains\MovieCore\views\default\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6442fe17648a11_06596528',
+  'unifunc' => 'content_6442f1a3264220_23814741',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '07d789696cab42fabd3019374073333accde9030' => 
+    'f976c9d6fd63b7c4be490ea1a08fd5a471e6891e' => 
     array (
-      0 => 'D:\\xampp\\htdocs\\MovieCore\\views\\default\\header.tpl',
-      1 => 1682112021,
+      0 => 'C:\\OSPanel\\domains\\MovieCore\\views\\default\\header.tpl',
+      1 => 1682108758,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6442fe17648a11_06596528 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6442f1a3264220_23814741 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 
@@ -54,18 +54,9 @@ function content_6442fe17648a11_06596528 (Smarty_Internal_Template $_smarty_tpl)
                         Жанри
                     </a>
                     <ul class="dropdown-menu">
-                        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['genres']->value, 'genre');
-$_smarty_tpl->tpl_vars['genre']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['genre']->value) {
-$_smarty_tpl->tpl_vars['genre']->do_else = false;
-?>
-                            <li><a class="dropdown-item" href="/find/genre/?name=<?php echo $_smarty_tpl->tpl_vars['genre']->value;?>
-"><?php echo $_smarty_tpl->tpl_vars['genre']->value;?>
-</a></li>
-                        <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
             </ul>

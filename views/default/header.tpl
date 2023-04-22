@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
 
+//Цей код є HTML-кодом для навігаційної панелі сайту. Він містить основну структуру HTML-сторінки з елементами,
+такими як заголовок, посилання, кнопки тощо. Навігаційна панель містить посилання на головну сторінку сайту,
+список жанрів, а також кнопку "Додати фільм". Код містить посилання на зовнішні бібліотеки, такі як Bootstrap
+і Font Awesome, які використовуються для забезпечення візуального оформлення сторінки. Код також містить скрипт
+для розкриваючогося меню, яке дозволяє користувачам легко переходити до різних розділів сайту.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +33,9 @@
                         Жанри
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        {foreach $genres as $genre}
+                            <li><a class="dropdown-item" href="/find/genre/?name={$genre}">{$genre}</a></li>
+                        {/foreach}
                     </ul>
                 </li>
             </ul>
