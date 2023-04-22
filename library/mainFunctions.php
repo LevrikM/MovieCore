@@ -33,3 +33,13 @@ function convertToReadableData($record_set){
 function loadTemplate($smarty, $templateName){
     $smarty -> display($templateName.TemplatePostfix);
 }
+
+function uploadFile($fileDir, $file){
+    do {
+        $fileNameParts = explode(".", $file["name"]);
+        $fileName = uniqid().".".array_pop($fileNameParts);
+        $newPath = "$fileDir/$fileName";
+    } while (file_exists($newPath));
+    move_uploaded_file($file["tmp_name"], $newPath);
+    return $fileName;
+}

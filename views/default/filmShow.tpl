@@ -17,6 +17,13 @@ HTML-код використовується для створення стру�
                 <hr>
                 <p class="lead">{$item["description"]}</p>
                 <p>{$item["descriptionLong"]}</p>
+                <hr>
+                <h4 class="mb-3">Трейлер</h4>
+                <iframe width="730" height="411" src="https://youtube.com/embed/{$item["youtube_video_id"]}"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>

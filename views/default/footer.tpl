@@ -9,9 +9,7 @@
 і посилання на сторінку з автором сайту. Він також має стилі Bootstrap для кращого оформлення.
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">&copy; All right reserved. 2023
-            <a href="https://t.me/levchuk_zt">Misha Krasnobokiy</a>
-        </p>
+        <p class="m-0 text-center text-white">&copy; All right reserved. 2023</p>
     </div>
 </footer>
 

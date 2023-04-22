@@ -8,8 +8,8 @@ function indexAction($smarty){
     $config['date'] = '%d.%m.%g';
     $config['time'] = '%H:%M';
     $smarty->assign('config', $config);
-    $smarty -> assign("pageTitle", "Головна");
-    $smarty -> assign("rsFilm", $rsFilm);
+    $smarty->assign("pageTitle", "Головна");
+    $smarty->assign("rsFilm", $rsFilm);
 
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "index");

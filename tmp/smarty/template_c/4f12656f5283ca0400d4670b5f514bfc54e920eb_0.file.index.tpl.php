@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-21 21:18:33
+/* Smarty version 4.3.0, created on 2023-04-22 03:13:19
   from 'D:\xampp\htdocs\MovieCore\views\default\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6442e189f37528_07739040',
+  'unifunc' => 'content_644334afe3bac8_42312296',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4f12656f5283ca0400d4670b5f514bfc54e920eb' => 
     array (
       0 => 'D:\\xampp\\htdocs\\MovieCore\\views\\default\\index.tpl',
-      1 => 1682090669,
+      1 => 1682125998,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6442e189f37528_07739040 (Smarty_Internal_Template $_smarty_tpl) {
+function content_644334afe3bac8_42312296 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-
-
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3">
-
             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rsFilm']->value, 'item');
 $_smarty_tpl->tpl_vars['item']->do_else = true;
@@ -57,12 +52,7 @@ $_smarty_tpl->tpl_vars['item']->do_else = false;
             <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-
-
         </div>
-
-
-
         <div class="col-md-4">
             <div class="card my-4">
                 <h5 class="card-header">Пошук по сайту</h5>
@@ -75,68 +65,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </span>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-    <div class="card my-4">
-        <h5 class="card-header">Пошук за жанром</h5>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/find/genre/?name=Фентезі">Фентезі</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Пригоди">Пригоди</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Сімейний">Сімейний</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/find/genre/?name=Комедія">Комедія</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Бойовик">Бойовик</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Жахи">Жахи</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/find/genre/?name=Фантастика">Фантастика</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Драми">Драми</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Спортивні">Спортивні</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/find/genre/?name=Кримінал">Кримінал</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Дитячі">Дитячі</a>
-                        </li>
-                        <li>
-                            <a href="/find/genre/?name=Аніме">Аніме</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
