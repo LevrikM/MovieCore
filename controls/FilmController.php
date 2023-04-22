@@ -24,23 +24,18 @@ function addAction($smarty){
     $year = isset($_POST["year"]) ? $_POST["year"] : null;
     $description = isset($_POST["description"]) ? $_POST["description"] : null;
     $descriptionLong = isset($_POST["descriptionLong"]) ? $_POST["descriptionLong"] : null;
-    $image = isset($_POST["image"]) ? $_POST["image"] : null;
+    $image = $_FILES["image"] ?? null;
     $genre = isset($_POST["genre"]) ? $_POST["genre"] : null;
     $director = isset($_POST["director"]) ? $_POST["director"] : null;
-
+    $yt_video_id = isset($_POST["yt_video_id"]) ? $_POST["yt_video_id"] : null;
 
 
     if($name != null){
-        foreach ($genre as $value) {
-            $value = trim($value, "[NS,L]");
-        }
-
         $genreString = implode(", ", $genre);
-        addFilm($name, $year, $description, $descriptionLong, $image, $genreString, $director);
+        addFilm($name, $year, $description, $descriptionLong, $image, $genreString, $director, $yt_video_id);
     }
 
     $smarty -> assign("pageTitle", "Додавання фільму");
-/*    $smarty -> assign("rsFilmInfo", $rsFilmInfo);*/
 
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "filmAdd");

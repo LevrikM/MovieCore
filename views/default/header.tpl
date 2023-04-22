@@ -28,9 +28,9 @@
                         Жанри
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        {foreach $genres as $genre}
+                            <li><a class="dropdown-item" href="/find/genre/?name={$genre}">{$genre}</a></li>
+                        {/foreach}
                     </ul>
                 </li>
             </ul>

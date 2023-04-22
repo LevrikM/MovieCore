@@ -18,15 +18,13 @@ function nameAction($smarty){
 
 
 function genreAction($smarty){
-    /*    $findFilm = isset($_POST["nameFind"]) ? $_POST["nameFind"] : null;*/
-
     $findFilm = isset($_GET["name"]) ? $_GET["name"] : null;
     $trimmed = trim($findFilm, "[NS,L]");
+
     $rsFilm = getFilmsByGenre($trimmed);
 
-
-    $smarty -> assign("pageTitle", "Головна");
-    $smarty -> assign("rsFilm", $rsFilm);
+    $smarty->assign("pageTitle", "Головна");
+    $smarty->assign("rsFilm", $rsFilm);
 
     loadTemplate($smarty, "header");
     loadTemplate($smarty, "index");

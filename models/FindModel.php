@@ -7,7 +7,6 @@ function getFilmsByName($findFilm)
     return convertToReadableData($record_set);
 }
 
-
 function getFilmsByGenre($findFilm){
     $sql = "SELECT * FROM films WHERE genre LIKE '%$findFilm%'";
     $record_set = (mysqli_query($GLOBALS["mysql"], $sql));

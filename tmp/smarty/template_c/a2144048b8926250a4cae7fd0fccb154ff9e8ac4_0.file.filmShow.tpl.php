@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-21 21:25:53
+/* Smarty version 4.3.0, created on 2023-04-22 03:55:04
   from 'D:\xampp\htdocs\MovieCore\views\default\filmShow.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6442e3413d7bd6_35637691',
+  'unifunc' => 'content_64433e78d7e306_50471578',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a2144048b8926250a4cae7fd0fccb154ff9e8ac4' => 
     array (
       0 => 'D:\\xampp\\htdocs\\MovieCore\\views\\default\\filmShow.tpl',
-      1 => 1682090669,
+      1 => 1682128504,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6442e3413d7bd6_35637691 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64433e78d7e306_50471578 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rsFilmInfo']->value, 'item');
 $_smarty_tpl->tpl_vars['item']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
@@ -46,6 +46,14 @@ $_smarty_tpl->tpl_vars['item']->do_else = false;
 </p>
                 <p><?php echo $_smarty_tpl->tpl_vars['item']->value["descriptionLong"];?>
 </p>
+                <hr>
+                <h4 class="mb-3">Трейлер</h4>
+                <iframe width="730" height="411" src="https://youtube.com/embed/<?php echo $_smarty_tpl->tpl_vars['item']->value["youtube_video_id"];?>
+"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
